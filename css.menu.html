@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>menu</title>
+</head>
+<style>
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  padding: .5em;
+}
+.menu > li {
+  display: inline-block;
+}
+
+.menu li {
+  position: relative;
+  white-space: nowrap;
+  padding: 0 .5em;
+}
+
+.menu ul {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  box-shadow: 0 0 5px #333;
+  border-radius: .3em;
+}
+
+.menu ul ul {
+  left: 100%;
+  top: -.5em;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+.menu,
+.menu ul {
+  background-color: #3c3c3c;
+  color: #c4c4c4;
+}
+.menu li:hover {
+  background-color: gold;
+}
+
+.menu li li {
+  padding: 0 100px 0 10px;
+}
+.menu li li > span {
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.menu li > hr {
+  margin-left: -10px;
+  margin-right: -100px;
+  border: none;
+  border-top:1px solid #606060;
+}
+
+li.sep {
+  border-top: 1px solid;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+</style>
+
+
+<body>
+
+  <ul class="menu">
+    <li>文件(F)
+      <ul>
+        <li>新建文本文件<span>Ctrl+N</span></li>
+        <li>新建文件 <span>Ctrl+S</span></li>
+        <li>新建窗口<span>Ctrl+S</span></li>
+        <li class="sep"></li>
+        <li>打开文件<span>Ctrl+O</span></li>
+        <li>打开文件夹<span>Ctrl+O Ctrl+K</span></li>
+        <li>从文件打开工作区
+        <li id="p1">打开最近文件
+          <ul class="b">
+            <li>1.html</li>
+            <li>2.html</li>
+            <li>3.html</li>
+            <li id="p2">4.html
+              <ul class="c">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="sep"></li>
+        <li>将文件夹添加到工作区...
+      </ul>
+    </li>
+    <li>编辑
+      <ul>
+        <li>撤销</li>
+        <li>恢复</li>
+        <li class="sep"></li>
+        <li>剪切</li>
+        <li>复制</li>
+        <li>粘贴</li>
+      </ul>
+    </li>
+    <li>编辑</li>
+  </ul>
+</body>
+</html>
