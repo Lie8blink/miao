@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprite</title>
-    <style>
-        .wrapper{
-            box-sizing: border-box;
-            width: 500px;
-            height: 362px;
-            padding: 0 15px;
-            margin: 100px auto;
-        }
-        .wrapper p .icon{
-            display: inline-block;
-            width: 39px;
-            height: 39px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            background: url(https://cn.bing.com/rp/i3t3vGbFsQ-XpUOCob6i88omBUs.png);
-            vertical-align: middle;
-        }
-        .wrapper p .icon.keyboard{
-            background-position: 0 -76px;
 
-        }
-        .wrapper p .icon.mag-glass{
-            background-position: -88px 0;
-        }
-        .wrapper p .icon.logo{
-            width: 44px;
-            height: 66px;
-            background-position: -152px -49px;
-        }
-        .wrapper p .icon.facebook{
-            width: 33px;
-            height: 33px;
-            background-position: -594px -45px;
-        }
-    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sprite</title>
+  <style>
+    .icon_camera {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      background: no-repeat url(./images/googleicon.png);
+      background-position: 0 0;
+    }
+
+    .icon_keyboard {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      background: no-repeat url(./images/googleicon.png);
+      background-position: 0 -80px;
+    }
+
+    .icon_pause {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      background: no-repeat url(./images/googleicon.png);
+      background-position: -626px -40px;
+    }
+
+    .icon_twitter {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      background: no-repeat url(./images/googleicon.png);
+      background-position: -1287px 4px;
+    }
+
+    .icon_facebook {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      background: no-repeat url(./images/googleicon.png);
+      background-position: -590px -40px;
+    }
+
+  </style>
 </head>
+
 <body>
-    <div class="wrapper">
-        <p><span class="icon camera"></span>相机</p>
-        <p><span class="icon mic"></span>键盘</p>
-        <p><span class="icon mag-glass"></span>放大镜</p>
-        <p><span class="icon logo"></span>logo</p>
-        <p><span class="icon facebook"></span>Facebook</p>
-    </div>
+  <span class="icon_camera"></span>
+  <span class="icon_keyboard"></span>
+  <span class="icon_pause"></span>
+  <span class="icon_twitter"></span>
+  <span class="icon_facebook"></span>
+
 </body>
+
 </html>
