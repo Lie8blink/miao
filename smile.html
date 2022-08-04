@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .out {
+      position: relative;
+      margin: auto;
+      width: 500px;
+      height: 500px;
+      border-radius: 250px;
+      transform-origin: 50% 50%;
+      transition: 5s;
+    }
+
+    .in {
+      position: absolute;
+      width: 125px;
+      height: 125px;
+      border-radius: 125px;
+      background: yellow;
+      text-align: center;
+      line-height: 67.5px;
+      transform-origin: 100% 100%;
+      transition: 5s;
+    }
+
+    .out:hover {
+      transform: rotate(-360deg);
+    }
+    .out:hover .in {
+      transform: rotate(360deg);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="out">
+    <div class="in">
+        <div>^ ^</div>
+        <div> - </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

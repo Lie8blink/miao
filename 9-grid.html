@@ -14,23 +14,61 @@
     }
     section {
       display: flex;
-      width: 167px;
-      height: 167px;
+      width: 170px;
+      height: 170px;
       justify-content: center;
       flex-wrap: wrap;
-      margin:auto auto;
+      margin:0 auto;
     }
     section div {
-      width: 49px;
-      height: 49px;
+      width: 50px;
+      height: 50px;
       border: 5px solid blue;
       margin: -2.5px;
-      line-height: 49px;
+      line-height: 50px;
       &:hover {
             border: 5px solid red;
             z-index: 1;
           }
      }
+     table {
+      width: 170px;
+      height: 170px;
+      line-height: 50px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      border-spacing: 0;
+     }
+     tr,col {
+     border: 5px solid blue;
+     }
+     td {
+     width: 50px;
+     height: 50px;
+     }
+     td:hover {
+      border: 5px solid red;
+     }
+      ul {
+     list-style: none;
+     padding: 0;
+     width: 180px;
+     margin: auto;
+     overflow: hidden;
+     padding-bottom: 5px;
+    }
+    ul li {
+     width: 50px;
+     height: 50px;
+     border: 5px solid blue;
+     float: left;
+     margin: 0 -5px -5px 0;
+     position: relative;
+    }
+      ul li:hover {
+      border: 5px solid red;
+      z-index: 8;
+      }
   </style>
 </head>
 
@@ -46,6 +84,39 @@
     <div>8</div>
     <div>9</div>
   </section>
+  <table>
+    <col>
+    <col>
+    <col>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </table>
+  <div>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+    </ul>
+  </div>
   <script src="./css/less.js"></script>
 </body>
 

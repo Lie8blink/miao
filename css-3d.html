@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 160px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .div1{
+            margin:  0 auto;
+            width: 160px;
+            height: 300px;
+            margin-top: 100px;
+            transform: perspective(400px) rotatex(105deg) rotatey(45deg);
+            transform-style: preserve-3d;
+            position: relative;
+            border:1px solid #000000;
+            animation: xuanzhuan 5s cubic-bezier(0.0,0.0,0.0,0.0) infinite forwards;
+        }
+        .div1 div{
+            position: absolute;
+            font-size: 80px;
+            line-height: 300px;
+            text-align: center;
+            top: 0;
+            left: 0;
+        }
+        .div1_1{
+            width: 160px;
+            transform: translatez(65px);
+            background-color: red;
+        }
+        .div1_2{
+            height: 160px;
+            line-height: 160px;
+            transform: rotatex(90deg) translatez(80px);
+            background-color:green;
+        }
+        .div1_3{
+            width: 160px;
+            transform: rotatex(180deg) translatez(65px);
+            background-color: blue;
+        }
+        .div1_4{
+            height: 160px;
+            line-height: 160px;
+            transform: rotatex(270deg) translatez(220px);
+            background-color: purple;
+        }
+        .div1_5{
+            width: 130px;
+            transform: rotatey(90deg) translatez(100px);
+            background-color: pink;
+        }
+        .div1_6{
+            width: 130px;
+            transform: rotatey(270deg) translatez(65px);
+            background-color: yellow;
+        }
+        @-webkit-keyframes xuanzhuan{
+            0% {transform:perspective(400px) rotateY(0deg)}
+            25% {transform:perspective(400px) rotateY(45deg)}
+            50% {transform:perspective(400px) rotateY(90deg)}
+            75% {transform:perspective(400px) rotateY(135deg)}
+            100% {transform:perspective(400px) rotateY(180deg)}
+
+        }
+        .div1:hover{
+            transform: perspective(400px) scale(1.5);
+            animation: xuanzhuan 5s cubic-bezier(0.0,0.0,0.0,0.0) infinite paused forwards;
+        }
+
+    </style>
+</head>
+<body>
+<div class="div1">
+    <div class="div1_1">1</div>
+    <div class="div1_2">2</div>
+    <div class="div1_3">3</div>
+    <div class="div1_4">4</div>
+    <div class="div1_5">5</div>
+    <div class="div1_6">6</div>
+</div>
+</body>
+</html>

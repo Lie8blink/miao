@@ -1,0 +1,82 @@
+* {
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+body {
+  min-width: 360px;
+  max-width: 740px;
+  width: 10rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+header {
+  position: fixed;
+  width: 22.5rem;
+  height: 4.4688rem;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  background: #f2f2f2;
+  xmax-width: 7.2rem;
+  overflow: hidden;
+}
+header .header-wapper {
+  width: 21.25rem;
+  height: 2.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-wapper .header-left {
+  width: 3.125rem;
+  height: 1.7688rem;
+  text-align: center;
+}
+header .header-wapper .header-left > img {
+  width: 1.5938rem;
+}
+header .header-wapper .header-tittle {
+  width: 16.25rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: left;
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+header .header-wapper .header-tittle > img {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0.25rem;
+  padding: 0.1rem;
+}
+header .header-wapper .header-right {
+  width: 3.125rem;
+  height: 1.875rem;
+  text-align: center;
+  line-height: 1.875rem;
+}
+header .header-wapper .header-right > img {
+  width: 1.25rem;
+  margin-top: 0.25rem;
+}
+header .header-menu {
+  width: 21.25rem;
+  height: 1.8438rem;
+  font-size: 0.26rem;
+  line-height: 1.4rem;
+}
+header .header-menu .items {
+  margin-left: 2.5rem;
+}
+header .header-menu .items > div {
+  display: inline-block;
+  margin: 0 0.35rem;
+  padding: 0 0.25rem;
+}
