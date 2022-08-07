@@ -1,0 +1,28 @@
+.sidebar {
+  position: fixed;
+  right: 0;
+  bottom: 70px;
+
+  @media (max-width: 1460px) {
+    left: 50%;
+    margin-left: calc(1226px / 2);
+    right: auto;
+  }
+
+  >div>span {
+    @media (max-width: 1460px) {
+      display: none;
+    }
+  }
+
+  >div>img {
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    @media (max-width: 1460px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

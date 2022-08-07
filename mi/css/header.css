@@ -1,0 +1,85 @@
+header {
+  width: 100%;
+  height: 40px;
+  background: #333333;
+}
+header .header-box {
+  width: 1226px;
+  height: 40px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+header .header-box a {
+  color: #b0b0b0;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 12px;
+}
+header .header-box a:hover {
+  color: #fff;
+}
+header .header-box .sep {
+  color: #424242;
+  margin: 0 0.3em;
+}
+header .header-box .header-left {
+  width: 1106px;
+  height: 40px;
+}
+header .header-box .header-left .header-nav {
+  float: left;
+  position: relative;
+}
+header .header-box .header-left .header-nav .appdown {
+  position: relative;
+}
+header .header-box .header-left .header-nav .appdown .appQRcode {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  margin-top: 0px;
+  margin-left: -62px;
+  width: 124px;
+  height: 148px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 8px grey;
+  transition: 1s;
+}
+header .header-box .header-left .header-nav .appdown .appQRcode > img {
+  display: block;
+  height: 90px;
+  margin: 18px 17px 0px;
+}
+header .header-box .header-left .header-nav .appdown:hover .appQRcode {
+  display: block;
+}
+header .header-box .header-left .header-user {
+  float: right;
+  margin-right: 25px;
+}
+header .header-box .header-right {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background: #424242;
+  text-align: center;
+}
+header .header-box .header-right .cart-list {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  top: 100%;
+  width: 316px;
+  height: 100px;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  box-shadow: 0 0 8px grey;
+}
+header .header-box .header-right:hover .cart-list {
+  display: block;
+}

@@ -5,70 +5,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mi.html</title>
+  <title>Document</title>
   <link rel="stylesheet" href="my-iconfont.css">
-  <link rel="stylesheet/less" href="./css/mi.css">
+  <link rel="stylesheet" href="./css/mi.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/section.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/sidebar.css">
 </head>
 
 <body>
-  <div class="page-box">
+  <div class="container">
     <header>
       <div class="header-box">
-        <div class="header-nav">
-          <a href="#">小米官网</a>
-          <span class="sep">|</span>
-          <a href="#">小米商城</a>
-          <span class="sep">|</span>
-          <a href="#">MIUI</a>
-          <span class="sep">|</span>
-          <a href="#">IoT</a>
-          <span class="sep">|</span>
-          <a href="#">云服务</a>
-          <span class="sep">|</span>
-          <a href="#">天星数科</a>
-          <span class="sep">|</span>
-          <a href="#">有品</a>
-          <span class="sep">|</span>
-          <a href="#">小爱开放平台</a>
-          <span class="sep">|</span>
-          <a href="#">企业团购</a>
-          <span class="sep">|</span>
-          <a href="#">资质证照</a>
-          <span class="sep">|</span>
-          <a href="#">协议规则</a>
-          <span class="sep">|</span>
-          <a href="#" class="app">下载app
-            <span class="appQRcode">
-              <img src="https://i1.mifile.cn/f/i/17/appdownload/download.png?1" alt="">
-              小米商城APP
-            </span>
-          </a>
-          <span class="sep">|</span>
-          <a href="#">Select Location </a>
+        <div class="header-left">
+          <ul class="header-nav">
+            <a href="#">小米官网</a><span class="sep">|</span>
+            <a href="#">小米商城</a><span class="sep">|</span>
+            <a href="#">MIUI</a><span class="sep">|</span>
+            <a href="#">IoT</a><span class="sep">|</span>
+            <a href="#">云服务</a><span class="sep">|</span>
+            <a href="#">天星数科</a><span class="sep">|</span>
+            <a href="#">有品</a><span class="sep">|</span>
+            <a href="#">小爱开放平台</a><span class="sep">|</span>
+            <a href="#">企业团购</a><span class="sep">|</span>
+            <a href="#">资质证照</a><span class="sep">|</span>
+            <a href="#">协议规则</a><span class="sep">|</span>
+            <a href="#" class="appdown">下载app
+              <div class="appQRcode"><img src="https://i1.mifile.cn/f/i/17/appdownload/download.png?1" alt="">小米商城APP
+              </div>
+            </a>
+            <span class="sep">|</span>
+            <a href="#">Select Location</a>
+          </ul>
+          <ul class="header-user">
+            <a href="#">登录</a><span class="sep">|</span>
+            <a href="#">注册</a><span class="sep">|</span>
+            <a href="#">消息通知</a>
+          </ul>
         </div>
-        <div class="header-user">
-          <a href="#">登录</a>
-          <span class="sep">|</span>
-          <a href="#">注册</a>
-          <span class="sep">|</span>
-          <a href="#">消息通知</a>
-          <div class="shopping-cart">
-            <a href="#" class="icon-cart"> 购物车（0）</a>
-            <div class="cart-list">购物车中还没有商品，赶紧选购吧！</div>
+        <div class="header-right">
+          <a href="#" class="cart"><span class="icon icon-shopping-cart"></span>购物车 (0)</a>
+          <div class="cart-list">
+            购物车中还没有商品，赶紧选购吧
           </div>
         </div>
       </div>
     </header>
 
-    <nav class="nav1">
-      <div class="nav1-box">
-        <div class="nav1-icon">
-          <a href="#"><img src="//s02.mifile.cn/assets/static/image/logo-mi2.png" alt="#"></a>
+    <nav>
+      <div class="nav-box">
+        <div class="nav-left">
+          <a href="#"><img src="https://s02.mifile.cn/assets/static/image/logo-mi2.png" alt=""></a>
         </div>
-        <div class="nav1-list">
-          <ul class="nav1-list-box">
+        <div class="nav-center">
+          <ul class="nav-menu">
             <li><a href="#">Xiaomi手机</a>
-              <ul class="product-submenu">
+              <ul class="nav-submenu">
                 <li>Xiaomi 12S Ultra</li>
                 <li>Xiaomi 12S Pro</li>
                 <li>Xiaomi 12S</li>
@@ -77,8 +72,8 @@
                 <li>Xiaomi 12 Pro</li>
               </ul>
             </li>
-            <li><a href="#">Redmi红米</a>
-              <ul class="product-submenu">
+            <li><a href="#">Redmi手机</a>
+              <ul class="nav-submenu">
                 <li>Redmi 12S Ultra</li>
                 <li>Redmi 12S Pro</li>
                 <li>Redmi 12S</li>
@@ -88,187 +83,332 @@
               </ul>
             </li>
             <li><a href="#">电视</a>
-              <ul class="product-submenu">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+              <ul class="nav-submenu">
+                <li>Xiaomi 12S</li>
+                <li>Xiaomi 12S</li>
+                <li>Xiaomi 12S</li>
+                <li>Xiaomi 12S</li>
+                <li>Xiaomi 12S</li>
+                <li>Xiaomi 12S</li>
               </ul>
             </li>
-            <li><a href="#">笔记本</a>
-              <ul class="product-submenu">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </li>
-            <li><a href="#">平板</a>
-              <ul class="product-submenu">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </li>
-            <li><a href="#">家电</a>
-              <ul class="product-submenu">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </li>
-            <li><a href="#">路由器</a>
-              <ul class="product-submenu">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </li>
-            <li><a href="#">服务中心 </a></li>
+            <li><a href="#">笔记本</a></li>
+            <li><a href="#">平板</a></li>
+            <li><a href="#">家电</a></li>
+            <li><a href="#">路由器</a></li>
+          </ul>
+          <ul class="nav-menu2">
+            <li><a href="#">服务中心</a></li>
             <li><a href="#">社区</a></li>
           </ul>
-
         </div>
-
-        <form class="nav1-search">
-          <input type="text" class="nav1-search">
-          <button><span class="icon icon-search"></span>icon-search</button>
-        </form>
+        <div class="nav-right">
+          <input type="text" class="nav-search">
+          <button><span class="icon icon-search"></span></button>
+        </div>
       </div>
     </nav>
 
-    <div class="hero">
-      <ul class="product-menu">
-        <li>手机
-          <ul class="product-menu-sub">
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
-            <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90" alt=""> Xiaomi 12S</li>
+    <section>
+      <div class="section-box">
+        <div class="section-list">
+          <ul class="section-menu">
+            <li>手机
+              <ul class="section-menu-sub">
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b883131e62133041d7ac8272c17762b0.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Xiaomi 12S</li>
+              </ul>
+            </li>
+            <li>电视
+              <ul class="section-menu-sub">
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi X65 2022款</li>
+              </ul>
+            </li>
+            <li>笔记本 平板
+              <ul class="section-menu-sub">
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+                <li><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c7640eb8b71e25f211ee2eac916f868b.png?thumb=1&w=40&h=40&f=webp&q=90"
+                    alt=""> Redmi G 游戏本 2022</li>
+              </ul>
+            </li>
+            <li>出行 穿戴</li>
+            <li>耳机 音箱</li>
+            <li>家电</li>
+            <li>智能 路由器</li>
+            <li>电源 配件</li>
+            <li>健康 儿童</li>
+            <li>生活 箱包</li>
           </ul>
-        </li>
-        <li>电视</li>
-        <li>笔记本 平板</li>
-        <li>出行 穿戴</li>
-        <li>耳机 音箱</li>
-        <li>家电</li>
-        <li>智能 路由器</li>
-        <li>电源 配件</li>
-        <li>健康 儿童</li>
-        <li>生活 箱包</li>
-      </ul>
-      <div class="slider">
-        <a href="#" class="prev">&lt;</a>
-        <a href="#" class="next">&gt;</a>
-        <div class="demo">
-          <!-- 创建图片存储容器 -->
-          <div class="demo1">
-            <!-- 引入轮播图图片 -->
-            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7b99a81d935902ae7db629032327c97d.jpeg?w=2452&h=920"
-              alt="" />
-            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/321583790daf3fd15ae6b91827d24b41.jpeg?thumb=1&w=1226&h=460&f=webp&q=90"
-              alt="" />
-            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/36b45c624f42fa81732457e3f9773dbd.jpg?thumb=1&w=1226&h=460&f=webp&q=90"
-              alt="" />
-          </div>
         </div>
-        <ul class="slider-ball">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <div class="section-slider">
+          <input type="radio" id="radio-1" name="radio" checked>
+          <input type="radio" id="radio-2" name="radio">
+          <input type="radio" id="radio-3" name="radio">
+          <div class="slider-imgs">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/815e1718487c0e8c760fcb5766269ddc.jpeg?w=2452&h=920"
+              alt="">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4c2ccbd65f5325796a6c2d8c984ca6b5.jpeg?thumb=1&w=1226&h=460&f=webp&q=90"
+              alt="">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/36b45c624f42fa81732457e3f9773dbd.jpg?thumb=1&w=1226&h=460&f=webp&q=90"
+              alt="">
+          </div>
+          <div class="slider-dots">
+            <label for="radio-1"></label>
+            <label for="radio-2"></label>
+            <label for="radio-3"></label>
+          </div>
+          <a href="#" class="prev">&lt;</a>
+          <a href="#" class="next">&gt;</a>
+        </div>
+      </div>
+      <div class="hero">
+        <div>
+          <ul class="hero-list">
+            <li><a href=""><img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82abdba456e8caaea5848a0cddce03db.png?w=48&h=48"
+                  alt="">话费充值</a></li>
+            <li><a href=""><img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/806f2dfb2d27978e33fe3815d3851fa3.png?w=48&h=48"
+                  alt="">话费充值</a></li>
+            <li><a href=""><img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eded6fa3b897a058163e2485532c4f10.png?w=48&h=48"
+                  alt="">话费充值</a></li>
+            <li><a href=""><img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/43a3195efa6a3cc7662efed8e7abe8bf.png?w=48&h=48"
+                  alt="">话费充值</a></li>
+            <li><a href=""><img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f4846bca6010a0deb9f85464409862af.png?w=48&h=48"
+                  alt="">话费充值</a></li>
+            <li><a href=""><img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9a76d7636b08e0988efb4fc384ae497b.png?w=48&h=48"
+                  alt="">话费充值</a></li>
+          </ul>
+        </div>
+        <div class="hero-img">
+          <a href="#"><img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/290270b6fc499fc5fcb653417e99fe91.jpg?w=632&h=340"
+              alt=""></a>
+          <a href="#"><img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5d1892854c8bb165e755d68bde287d71.jpg?w=632&h=340"
+              alt=""></a>
+          <a href="#"><img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/28c13d0d11b38ec17fa5d83bc6ba5912.jpg?w=632&h=340"
+              alt=""></a>
+        </div>
+      </div>
+    </section>
+
+    <main></main>
+    
+    <footer>
+      <div class="footer-service">
+        <ul>
+          <li><a href="#">预约维修服务</a></li>
+          <li><a href="#">7天无理由退货</a></li>
+          <li><a href="#">15天免费换货</a></li>
+          <li><a href="#">满69元包邮</a></li>
+          <li><a href="#">1100余家售后网点</a></li>
         </ul>
       </div>
-    </div>
+      <div class="footer-links">
+        <dl class="footer-links-sub"></dl>
+        <dl class="footer-links-sub">
+          <dt>选购指南</dt>
+          <dd>手机</dd>
+          <dd>电视</dd>
+          <dd>笔记本</dd>
+          <dd>平板</dd>
+          <dd>穿戴</dd>
+          <dd>耳机</dd>
+          <dd>家电</dd>
+          <dd>路由器</dd>
+          <dd>音箱</dd>
+          <dd>配件</dd>
+        </dl>
+        <dl class="footer-links-sub">
+          <dt>服务中心</dt>
+          <dd>申请售后</dd>
+          <dd>售后政策</dd>
+          <dd>维修服务价格</dd>
+          <dd>订单查询</dd>
+          <dd>以旧换新</dd>
+          <dd>保障服务</dd>
+          <dd>防伪查询</dd>
+          <dd>F码通道</dd>
+        </dl>
+        <dl class="footer-links-sub">
+          <dt>线下门店</dt>
+          <dd>小米之家</dd>
+          <dd>服务网点</dd>
+          <dd>授权体验店/专区</dd>
+        </dl>
+        <dl class="footer-links-sub">
+          <dt>关于小米</dt>
+          <dd>了解小米</dd>
+          <dd>加入小米</dd>
+          <dd>投资者关系</dd>
+          <dd>环境，社会及管治</dd>
+          <dd>廉洁举报</dd>
+        </dl>
+        <dl class="footer-links-sub">
+          <dt>关注我们</dt>
+          <dd>新浪微博</dd>
+          <dd>官方微信</dd>
+          <dd>联系我们</dd>
+          <dd>公益基金会</dd>
+        </dl>
+        <div class="contact">
+          <p class="contact1">400-100-5678</p>
+          <p class="contact2">8:00-18:00（仅收市话费）</p>
+          <a href="#"><div class="contact3"><img src="" alt="">人工客服</div></a>
+        </div>
+      </div>
+    </footer>
 
-    <div class="fixed-sidebar">
-      <ul>
-        <li><span class="icon icon-shopping-cart"></span>
-          <span class="icon-text"> 手机app</span>
-        </li>
-        <li><span class="icon icon-shopping-cart"></span>
-          <span class="icon-text"> 个人中心</span>
-        </li>
-        <li><span class="icon icon-shopping-cart"></span>
-          <span class="icon-text"> 售后服务</span>
-        </li>
-        <li><span class="icon icon-shopping-cart"></span>
-          <span class="icon-text"> 人工客服</span>
-        </li>
-        <li><span class="icon icon-shopping-cart"></span>
-          <span class="icon-text"> 购物车</span>
-        </li>
-      </ul>
+    <div class="sidebar">
+      <div><img src="https://i8.mifile.cn/b2c-mimall-media/74c4fcb4475af8308e9a670db9c01fdf.png"
+          alt=""><span>手机APP</span></div>
+      <div><img src="https://i8.mifile.cn/b2c-mimall-media/74c4fcb4475af8308e9a670db9c01fdf.png"
+          alt=""><span>个人中心</span></div>
+      <div><img src="https://i8.mifile.cn/b2c-mimall-media/74c4fcb4475af8308e9a670db9c01fdf.png"
+          alt=""><span>售后服务</span></div>
+      <div><img src="https://i8.mifile.cn/b2c-mimall-media/74c4fcb4475af8308e9a670db9c01fdf.png"
+          alt=""><span>人工客服</span></div>
+      <div><img src="https://i8.mifile.cn/b2c-mimall-media/74c4fcb4475af8308e9a670db9c01fdf.png" alt=""><span>购物车</span>
+      </div>
     </div>
   </div>
-
-  <div class="nav2">
-    <div class="nav2-subnav">
-      <ul>
-        <li><a href=""><span><img
-                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82abdba456e8caaea5848a0cddce03db.png?w=48&h=48"
-                alt="">话费充值</span></a></li>
-        <li><a href=""><span><img
-                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/806f2dfb2d27978e33fe3815d3851fa3.png?w=48&h=48"
-                alt="">话费充值</span></a></li>
-        <li><a href=""><span><img
-                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eded6fa3b897a058163e2485532c4f10.png?w=48&h=48"
-                alt="">话费充值</span></a></li>
-        <li><a href=""><span><img
-                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/43a3195efa6a3cc7662efed8e7abe8bf.png?w=48&h=48"
-                alt="">话费充值</span></a></li>
-        <li><a href=""><span><img
-                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f4846bca6010a0deb9f85464409862af.png?w=48&h=48"
-                alt="">话费充值</span></a></li>
-        <li><a href=""><span><img
-                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9a76d7636b08e0988efb4fc384ae497b.png?w=48&h=48"
-                alt="">话费充值</span></a></li>
-      </ul>
-    </div>
-    <div class="nav2-list">
-      <a href="#"><img
-          src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/290270b6fc499fc5fcb653417e99fe91.jpg?w=632&h=340"
-          alt=""></a>
-      <a href="#"><img
-          src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5d1892854c8bb165e755d68bde287d71.jpg?w=632&h=340"
-          alt=""></a>
-      <a href="#"><img
-          src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/28c13d0d11b38ec17fa5d83bc6ba5912.jpg?w=632&h=340"
-          alt=""></a>
-    </div>
-  </div>
-
-  <main>
-    <div class="container">
-      <div class="banner-left"></div>
-      <div class="banner-right"></div>
-    </div>
-  </main>
-  <script src="/css/less.js"></script>
 </body>
 
 </html>
