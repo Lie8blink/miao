@@ -16,6 +16,13 @@ nav .nav-box .nav-center {
   line-height: 100px;
   font-size: 14px;
 }
+nav .nav-box .nav-center a {
+  color: #333333;
+  font-size: 16px;
+}
+nav .nav-box .nav-center a:hover {
+  color: #ff6700;
+}
 nav .nav-box .nav-center .nav-menu {
   display: flex;
 }
@@ -32,13 +39,23 @@ nav .nav-box .nav-center .nav-menu li .nav-submenu {
   left: 0;
   justify-content: center;
   z-index: 10;
+  background: #fff;
 }
 nav .nav-box .nav-center .nav-menu li .nav-submenu > li {
   width: calc(1226px / 6);
+  text-align: center;
+  padding: 35px 12px 0;
+  font-size: 12px;
+  line-height: 20px;
+}
+nav .nav-box .nav-center .nav-menu li .nav-submenu > li > img {
+  width: 160px;
+  height: 110px;
 }
 nav .nav-box .nav-center .nav-menu li:hover .nav-submenu {
   z-index: 100;
   transition: 1s height, 0 z-index;
+  border-top: 1px #e0e0e0 solid;
 }
 nav .nav-box .nav-center .nav-menu:hover > li .nav-submenu {
   height: 230px;
@@ -63,7 +80,7 @@ nav .nav-box .nav-right:focus-within button {
 }
 nav .nav-box .nav-right input {
   width: 223px;
-  height: 48px;
+  height: 50px;
   box-sizing: border-box;
   border: 1px solid #e0e0e0;
   border-right: none;

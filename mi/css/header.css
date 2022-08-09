@@ -43,10 +43,11 @@ header .header-box .header-left .header-nav .appdown .appQRcode {
   margin-left: -62px;
   width: 124px;
   height: 148px;
-  color: #fff;
+  color: #333;
+  background: #fff;
   text-align: center;
   box-shadow: 0 0 8px grey;
-  transition: 1s;
+  transition: 3px;
 }
 header .header-box .header-left .header-nav .appdown .appQRcode > img {
   display: block;
@@ -75,7 +76,8 @@ header .header-box .header-right .cart-list {
   top: 100%;
   width: 316px;
   height: 100px;
-  color: #fff;
+  color: #333;
+  background: #fff;
   text-align: center;
   line-height: 100px;
   box-shadow: 0 0 8px grey;

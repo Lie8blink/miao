@@ -3,6 +3,7 @@
   height: 460px;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 26px;
 }
 .section-box .section-list {
   width: 234px;
@@ -18,11 +19,14 @@
   padding-left: 30px;
   padding-right: 20px;
 }
+.section-box .section-list .section-menu > li:hover {
+  background: #ff6700;
+}
 .section-box .section-list .section-menu > li::after {
   content: '\E623';
   font-family: 图标字体;
   float: right;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .section-box .section-list .section-menu > li:hover .section-menu-sub {
   visibility: visible;
