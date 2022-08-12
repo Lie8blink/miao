@@ -116,9 +116,10 @@ main .banner {
 main .banner .banner-1 {
   width: 22.5rem;
   height: 15.875rem;
+  display: flex;
 }
 main .banner .banner-1 .banner-1-1 {
-  width: 50%;
+  width: 11.25rem;
   height: 15.875rem;
 }
 main .banner .banner-1 .banner-1-1 img {
