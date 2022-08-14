@@ -1214,11 +1214,22 @@
   }
 </script>
 
-<script id="weekday">
-
+<script type="x" id="weekday">
+  var year = Number(prompt());
+  var month = Number(prompt());
+  if (month == 1 || month == 2)//判断month是否为1或2　
+    year--, month += 12;
+  var c = year / 100;
+  var y = year - c * 100;
+  var week = y + y / 4 + c / 4 - 2 * c + 26 * (month + 1) / 10 + 1;
+  while (week < 0) {
+    week += 7;
+  }
+  week %= 7;
+  console.log(Math.ceil(week));
 </script>
 
-<script id="complete-number">
+<script type="x" id="complete-number">
   var n = Number(prompt());
   var s = 0;
   for (var i = 1; i < n; i++) {
@@ -1233,8 +1244,8 @@
   }
 </script>
 
-<script id="complete-numbers">
-  for (var n = 1; n <= 1000; n++) {
+<script type="x" id="complete-numbers">
+  for (var n=1;n<=500;n++) {
     var s = 0;
     for (var i = 1; i < n; i++) {
       if (n % i == 0) {
@@ -1247,7 +1258,7 @@
   }
 </script>
 
-<script id="prime">
+<script type="x" id="prime">
   var x = Number(prompt());
   if (x == 1) { console.log('NO'); }
   else if (x == 2) { console.log('YES'); }
@@ -1263,7 +1274,7 @@
   }
 </script>
 
-<script id="primes">
+<script type="x" id="primes">
   for (i = 1; i <= 100; i++) {
     if (i == 1) {
       continue;
@@ -1281,22 +1292,51 @@
   }
 </script>
 
-<script id="itoa">
+<script type="x" id="itob">
   var x = Number(prompt());
-
+  console.log(x.toFixed(0));
 </script>
 
-<script id="lcf&lcm">
+<script type="x" id="lcf&lcm">
   var lcf = Number(prompt());
   var lcm = Number(prompt());
-  for (var i = 1; i < lcf; i++) {
-    if (n % i == 0) {
-      s += i;
+  var max = 0;
+  var min = lcf;
+  for (var i = 1; i <= lcf; i++) {
+    if (lcf % i == 0 && lcm % i == 0) {
+      if (i>max){
+        max = i;
+      }
+      if(i>1&&i<min){
+        if (i<min){
+          min = i;
+        }
+      }
     }
   }
+  if(lcf>lcm){
+    min = min * lcf;
+  }else{
+    min = min * lcm;
+  }
+  console.log(max,min);
 </script>
 
-<script id="sqrt">
-  var n = Number(prompt());
-  
+<script type="x" id="sqrt">
+  var x = Number(prompt());
+  var left = 0;
+  var right = x;
+  var a = 0.001;
+  var i = x / 2;
+  while (Math.abs(i ** 2 - x) > a) {
+    if (i ** 2 - x < 0) {
+      left = i;
+      i += (right - left) / 2;
+    }
+    else {
+      right = i;
+      i -= (right - left) / 2;
+    }
+  }
+  console.log(i.toFixed(3));
 </script>
