@@ -80,7 +80,7 @@ header .header-menu .items > div {
   padding: 0 0.25rem;
 }
 main {
-  width: 100%;
+  width: 22.5rem;
   margin-top: 4.4688rem;
 }
 main .swiper {
@@ -110,7 +110,7 @@ main .cells a img {
   height: 100%;
 }
 main .banner {
-  width: 100%;
+  width: 22.5rem;
   height: 100rem;
 }
 main .banner .banner-1 {
@@ -123,6 +123,14 @@ main .banner .banner-1 .banner-1-1 {
   height: 15.875rem;
 }
 main .banner .banner-1 .banner-1-1 img {
+  width: 11.1875rem;
+  height: 15.875rem;
+}
+main .banner .banner-1 .banner-1-2 {
+  width: 11.25rem;
+  height: 15.875rem;
+}
+main .banner .banner-1 .banner-1-2 img {
   width: 11.1875rem;
   height: 15.875rem;
 }

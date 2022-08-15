@@ -411,7 +411,8 @@
   var c = prompt();
   var x1 = (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
   var x2 = (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
-  if (b2 = 4 * a * c) {
+  var b2 = b**2;
+  if (b2 == 4 * a * c) {
     console.log("x1=x2=" + x1)
   } else if (b2 > 4 * a * c) {
     var max;
@@ -423,7 +424,9 @@
       }
       console.log("x1=" + max + ";x2=" + x2)
     }else{
-
+      var sb = -b / (2*a);
+      var xb = Math.sqrt(4*a*c-b*b) / (2*a);
+      console.log('x1='+sb.toFixed(5)+'+'+xb.toFixed(5)+'i;x2='+sb.toFixed(5)+'-'+xb.toFixed(5)+'i')
     }
 </script>
 
@@ -785,7 +788,7 @@
   console.log(s);
 </script>
 
-<script type="x" id="ch0105/25">
+<script  id="ch0105/25">
   var a;
   var b;
   var c;
@@ -1001,7 +1004,23 @@
 </script>
 
 <script type="x" id="ch0105/38">
-
+  var n = Number(prompt());
+  for(var i=0;i<=n;i++){
+    var x = Number(prompt());
+    var X=x;
+    if(x==0){
+      var y = Number(prompt());
+      console.log(0)
+    }else{
+      for(var j=0;j<=X;j++){
+        var y = Number(prompt());
+        if(j!=X){
+          console.log(x*y)
+          x--
+        }
+      }
+    }
+  }
 </script>
 
 <script type="x" id="ch0105/39">
