@@ -62,37 +62,37 @@ var lie8blink = {
         return result
     },
 
-    findIndex:function(array, predicate=_.identity, fromIndex=0){
+    // findIndex:function(array, predicate=_.identity, fromIndex=0){
 
-    },
+    // },
 
-    findLastIndex: function() {},
+    // findLastIndex: function() {},
 
-    flatten: function() {},
+    // flatten: function() {},
 
-    flattenDeep: function() {},
+    // flattenDeep: function() {},
 
-    flattenDepth: function() {},
+    // flattenDepth: function() {},
 
-    fromPairs: function() {},
+    // fromPairs: function() {},
 
-    head: function() {},
+    // head: function() {},
 
-    indexOf: function() {},
+    // indexOf: function() {},
 
-    lastIndexOf: function() {},
+    // lastIndexOf: function() {},
 
-    initial: function() {},
+    // initial: function() {},
 
-    join: function() {},
+    // join: function() {},
 
-    last: function() {},
+    // last: function() {},
 
-    pull: function() {},
+    // pull: function() {},
 
-    reverse: function() {},
+    // reverse: function() {},
 
-    every: function() {},
+    // every: function() {},
 
-    some: function() {},
+    // some: function() {},
 }
