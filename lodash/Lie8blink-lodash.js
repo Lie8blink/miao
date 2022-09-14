@@ -1,4 +1,4 @@
-var Lie8blink = {
+var lie8blink = {
     chunk: function (array, size = 1) {
         const left = []
         const right = []
@@ -30,19 +30,69 @@ var Lie8blink = {
     difference: function (array, ...values) {
         var ary = [];
         for (var i = 0; i < array.length; i++) {
-          var item = array[i];
-          var ins = false;
-          for (var j = 0; j < values.length; j++) {
-            for (var k = 0; k < values[j].length; k++) {
-              if (item == values[j][k]) {
-                ins = true;
-              }
+            var item = array[i];
+            var ins = false;
+            for (var j = 0; j < values.length; j++) {
+                for (var k = 0; k < values[j].length; k++) {
+                    if (item == values[j][k]) {
+                        ins = true;
+                    }
+                }
             }
-          }
-          if (!ins) {
-            ary.push(item);
-          }
+            if (!ins) {
+                ary.push(item);
+            }
         }
         return ary;
-      },
+    },
+
+    fill:function(array, value, start=0, end=array.length){
+        for(start;start<end;start++){
+            array[start]=value
+        }
+        return array
+    },
+
+    drop:function(array, n=1){
+        const len=array.length
+        const result=[]
+        for(n;n<len;n++){
+            result.push(array[n])
+        }
+        return result
+    },
+
+    findIndex:function(array, predicate=_.identity, fromIndex=0){
+
+    },
+
+    findLastIndex: function() {},
+
+    flatten: function() {},
+
+    flattenDeep: function() {},
+
+    flattenDepth: function() {},
+
+    fromPairs: function() {},
+
+    head: function() {},
+
+    indexOf: function() {},
+
+    lastIndexOf: function() {},
+
+    initial: function() {},
+
+    join: function() {},
+
+    last: function() {},
+
+    pull: function() {},
+
+    reverse: function() {},
+
+    every: function() {},
+
+    some: function() {},
 }
