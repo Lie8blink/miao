@@ -1,25 +1,26 @@
 var lie8blink = {
-    chunk: function (array, size = 1) {
-        const left = []
-        const right = []
-        const len = array.length
-        if (len < size) {
-            for (let i = 0; i < len; i++) {
-                if (i < size) {
-                    left.push(array[i])
-                } else {
-                    right.push(array[i])
-                }
-            }
-            return [left, right]
-        } else {
-            return []
+    chunk(array, size = 1) {
+        if (size < 1) {
+            return 'Size must be greater than 0';
         }
+
+        const length = array.length;
+        const result = [];
+
+        for (let i = 0; i < length; i += size) {
+            result.push(
+                array.slice(i, i + size)
+            )
+
+            if (length - i <= size) break;
+        }
+
+        return result;
     },
 
     compact: function (array) {
         const result = []
-        for (let i in array) {
+        for (let i of array) {
             if (i) {
                 result.push(i)
             }
@@ -84,37 +85,42 @@ var lie8blink = {
     },
 
     flattenDeep: function (array) {
-        const result = []
-        while (flag = true) {
-            let flag = true
-            for (let i = 0; i < array.length; i++) {
-                let x = array[i]
-                if (typeof x === "object") {
-                    flag = false
-                    for (let j = 0; j < x.length; j++) {
-                        result.push(x[j])
-                    }
-                } else {
-                    result.push(x)
-                }
-            }
+        const queue = array.slice();
+        const result = [];
+
+        while (queue.length) {
+            let curr = queue.shift();
+
+            if (Array.isArray(curr)) {
+                queue.unshift(...curr);
+            } else result.push(curr);
         }
-        return result
+
+        return result;
     },
 
     flattenDepth: function (array, depth = 1) {
-        const result = []
-        for (depth; depth > 0; depth--) {
-            result = flatten(array)
+        const queue = array.slice();
+        const result = [];
+
+        while (queue.length) {
+            let curr = queue.shift();
+
+            if (Array.isArray(curr) && depth) {
+                queue.unshift(...curr);
+                depth--;
+            } else result.push(curr);
         }
-        return result
+
+        return result;
     },
 
     fromPairs: function (pairs) {
         const result = {}
         for (let i = 0; i < pairs.length; i++) {
-
+            result[i[0]] = i[i]
         }
+        return result
     },
 
     head: function (array) {
@@ -146,7 +152,6 @@ var lie8blink = {
     },
 
     join: function (array, separator = ',') {
-        if (array.length === 1) return array[0]
         let result = ""
         for (let i = 0; i < array.length; i++) {
             if (i == 0) {
@@ -162,7 +167,7 @@ var lie8blink = {
         return array[array.length - 1]
     },
 
-    pull: function (array, values) {
+    pull: function (array, ...values) {
         let result = []
         for (let i = 0; i < array.length; i++) {
             if (array[i] !== values) {
@@ -180,7 +185,7 @@ var lie8blink = {
         return result
     },
 
-    every: function () {
+    every: function (collection, predicate = _.identity) {
 
     },
 
@@ -188,8 +193,13 @@ var lie8blink = {
 
     },
 
-    countBy: function () {
-
+    countBy: function (collection, iteratee) {
+        const map = new Map()
+        for (let i = 0; i < collection.length; i++) {
+            let j = iteratee(collection[i])
+            map.has(j) ? map[j]++ : map.set(j, 1)
+        }
+        return map
     },
 
     groupBy: function () {
@@ -220,8 +230,8 @@ var lie8blink = {
 
     },
 
-    size: function () {
-
+    size: function (collection) {
+        return Object.keys(collection).length
     },
 
     sortBy: function () {
