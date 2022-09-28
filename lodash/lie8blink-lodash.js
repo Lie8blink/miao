@@ -69,10 +69,7 @@ var lie8blink = {
     },
 
     findIndex: function (array, predicate = _.identity, fromIndex = 0) {
-        let result
-        for (let i in array) {
-
-        }
+        
     },
 
     findLastIndex: function () { },
@@ -382,7 +379,7 @@ var lie8blink = {
     },
 
     floor: function (number, precision=0) {
-        
+
     },
 
     cloneDeep: function () {
