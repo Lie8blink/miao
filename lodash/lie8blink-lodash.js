@@ -69,7 +69,7 @@ var lie8blink = {
     },
 
     findIndex: function (array, predicate = _.identity, fromIndex = 0) {
-        
+
     },
 
     findLastIndex: function () { },
@@ -345,7 +345,11 @@ var lie8blink = {
     concat: function () {
 
     },
-    isEqual,
+
+    isEqual: function () {
+
+    },
+    
     repeat: function () {
 
     },
