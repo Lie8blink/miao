@@ -3,10 +3,8 @@ var lie8blink = {
         if (size < 1) {
             return 'Size must be greater than 0';
         }
-
         const length = array.length;
         const result = [];
-
         for (let i = 0; i < length; i += size) {
             result.push(
                 array.slice(i, i + size)
@@ -14,7 +12,6 @@ var lie8blink = {
 
             if (length - i <= size) break;
         }
-
         return result;
     },
 
@@ -63,8 +60,19 @@ var lie8blink = {
         return result
     },
 
-    findIndex: function (array, predicate = _.identity, fromIndex = 0) {
+    dropRight: function (array, n = 1) {
+        const result = [];
+        for (let i = 0; i < array.length - n; i++) {
+            result.push(array[i]);
+        }
+        return result;
+    },
 
+    findIndex: function (array, predicate = _.identity, fromIndex = 0) {
+        let result
+        for (let i in array) {
+
+        }
     },
 
     findLastIndex: function () { },
@@ -117,7 +125,7 @@ var lie8blink = {
 
     fromPairs: function (pairs) {
         const result = {}
-        for (let i = 0; i < pairs.length; i++) {
+        for (let i of pairs) {
             result[i[0]] = i[i]
         }
         return result
@@ -152,15 +160,16 @@ var lie8blink = {
     },
 
     join: function (array, separator = ',') {
-        let result = ""
-        for (let i = 0; i < array.length; i++) {
-            if (i == 0) {
-                result = array[i]
+        let resultStr = ""
+        for (var i = 0; i < array.length; i++) {
+            if (i === array.length - 1) {
+                resultStr += String(array[i])
+                break
             } else {
-                result = result + separator + array[i]
+                resultStr += (String(array[i]) + separator)
             }
         }
-        return result
+        return resultStr
     },
 
     last: function (array) {
@@ -168,10 +177,20 @@ var lie8blink = {
     },
 
     pull: function (array, ...values) {
-        let result = []
-        for (let i = 0; i < array.length; i++) {
-            if (array[i] !== values) {
-                result.push(array[i])
+        const result = []
+        for (let i of array) {
+            if (!values.includes(i)) {
+                result.push(i)
+            }
+        }
+        return result
+    },
+
+    pullAll: function (array, values) {
+        const result = []
+        for (let i of array) {
+            if (!values.includes(i)) {
+                result.push(i)
             }
         }
         return result
@@ -185,7 +204,23 @@ var lie8blink = {
         return result
     },
 
-    every: function (collection, predicate = _.identity) {
+    sortedIndex: function (array, value) {
+        let left = 0
+        let right = array.length - 1
+        for (left, right; left < right;) {
+            mid = Math.floor(right - left) / 2 + left
+            if (array[mid] === value) {
+                return mid
+            } else if (array[mid] > value) {
+                left = mid + 1
+            } else {
+                right = mid
+            }
+        }
+        return right
+    },
+
+    every: function (collection, predicate = identity) {
 
     },
 
@@ -242,35 +277,146 @@ var lie8blink = {
 
     },
 
-    // isUndefined,
-    // isNull,
-    // isNil,
-    // max,
-    // min,
-    // maxBy,
-    // minBy,
-    // round,
-    // sumBy
-    // flagMap,
-    // flatMapDepth,
-    // get,
-    // has,
-    // mapKeys,
-    // mapValues
-    // range,
-    // stringifyJSON,
-    // concat,isEqual,
-    // repeat,
-    // padStart,
-    // padEnd,
-    // pad,
-    // keys,
-    // random,
-    // round,
-    // ceil,
-    // floor,
-    // cloneDeep
-    // trim,
-    // trimStart,
-    // trimEnd
+    isUndefined: function () {
+
+    },
+
+    isNull: function () {
+
+    },
+
+    isNil: function () {
+
+    },
+
+    max: function () {
+
+    },
+
+    min: function () {
+
+    },
+
+    maxBy: function () {
+
+    },
+
+    minBy: function () {
+
+    },
+
+    round: function () {
+
+    },
+
+    sumBy: function () {
+
+    },
+
+    flagMap: function () {
+
+    },
+
+    flatMapDepth: function () {
+
+    },
+
+    get: function () {
+
+    },
+
+    has: function () {
+
+    },
+
+    mapKeys: function () {
+
+    },
+
+    mapValues: function () {
+
+    },
+
+    range: function () {
+
+    },
+
+    stringifyJSON: function () {
+
+    },
+
+    concat: function () {
+
+    },
+    isEqual,
+    repeat: function () {
+
+    },
+
+    padStart: function () {
+
+    },
+
+    padEnd: function () {
+
+    },
+
+    pad: function () {
+
+    },
+
+    keys: function () {
+
+    },
+
+    random: function () {
+
+    },
+
+    round: function (number, precision=0) {
+
+    },
+
+    ceil: function (number, precision=0) {
+
+    },
+
+    floor: function (number, precision=0) {
+        
+    },
+
+    cloneDeep: function () {
+
+    },
+
+    trim: function () {
+
+    },
+
+    trimStart: function () {
+
+    },
+
+    trimEnd: function () {
+
+    },
+
+    concat: function (array, values) {
+        const result = []
+        for (let key in array) {
+            result.push(key)
+        }
+        for (let i = 0; i < values.length; i++) {
+            if (Array.isArray(values[j])) {
+                for (var k = 0; k < values[j].length; k++) {
+                    result.push(values[j][k])
+                }
+            } else {
+                result.push(values[j])
+            }
+        }
+        return result
+    }
+
+
 }
