@@ -123,7 +123,7 @@ var lie8blink = {
     fromPairs: function (pairs) {
         const result = {}
         for (let i of pairs) {
-            result[i[0]] = i[i]
+            result[i[0]] = i[1]
         }
         return result
     },
@@ -217,13 +217,36 @@ var lie8blink = {
         return right
     },
 
-    every: function (collection, predicate = identity) {
+    // sortedIndexBy: function (array, value, iteratee = _.identity) {
 
-    },
+    // },
+    // sortedIndexOf: function (array, value) {
 
-    some: function () {
+    // },
+    // sortedLastIndex: function (array, value) {
 
-    },
+    // },
+    // sortedLastIndexBy: function (array, value, iteratee = _.identity) {
+
+    // },
+    // sortedLastIndexOf: function (array, value) {
+
+    // },
+    // sortedUniq: function (array) {
+
+    // },
+    // sortedUniqBy: function (array,iteratee) {
+
+    // },
+
+
+    // every: function (collection, predicate = identity) {
+
+    // },
+
+    // some: function () {
+
+    // },
 
     countBy: function (collection, iteratee) {
         const map = new Map()
@@ -234,173 +257,173 @@ var lie8blink = {
         return map
     },
 
-    groupBy: function () {
+    // groupBy: function () {
 
-    },
+    // },
 
-    keyBy: function () {
+    // keyBy: function () {
 
-    },
+    // },
 
-    forEach: function () {
+    // forEach: function () {
 
-    },
+    // },
 
-    map: function () {
+    // map: function () {
 
-    },
+    // },
 
-    filter: function () {
+    // filter: function () {
 
-    },
+    // },
 
-    reduce: function () {
+    // reduce: function () {
 
-    },
+    // },
 
-    reduceRight: function () {
+    // reduceRight: function () {
 
-    },
+    // },
 
     size: function (collection) {
         return Object.keys(collection).length
     },
 
-    sortBy: function () {
+    // sortBy: function () {
 
-    },
+    // },
 
-    sample: function () {
+    // sample: function () {
 
-    },
+    // },
 
-    isUndefined: function () {
+    // isUndefined: function () {
 
-    },
+    // },
 
-    isNull: function () {
+    // isNull: function () {
 
-    },
+    // },
 
-    isNil: function () {
+    // isNil: function () {
 
-    },
+    // },
 
-    max: function () {
+    // max: function () {
 
-    },
+    // },
 
-    min: function () {
+    // min: function () {
 
-    },
+    // },
 
-    maxBy: function () {
+    // maxBy: function () {
 
-    },
+    // },
 
-    minBy: function () {
+    // minBy: function () {
 
-    },
+    // },
 
-    round: function () {
+    // round: function () {
 
-    },
+    // },
 
-    sumBy: function () {
+    // sumBy: function () {
 
-    },
+    // },
 
-    flagMap: function () {
+    // flagMap: function () {
 
-    },
+    // },
 
-    flatMapDepth: function () {
+    // flatMapDepth: function () {
 
-    },
+    // },
 
-    get: function () {
+    // get: function () {
 
-    },
+    // },
 
-    has: function () {
+    // has: function () {
 
-    },
+    // },
 
-    mapKeys: function () {
+    // mapKeys: function () {
 
-    },
+    // },
 
-    mapValues: function () {
+    // mapValues: function () {
 
-    },
+    // },
 
-    range: function () {
+    // range: function () {
 
-    },
+    // },
 
-    stringifyJSON: function () {
+    // stringifyJSON: function () {
 
-    },
+    // },
 
-    concat: function () {
+    // concat: function () {
 
-    },
+    // },
 
-    isEqual: function () {
+    // isEqual: function () {
 
-    },
-    
-    repeat: function () {
+    // },
 
-    },
+    // repeat: function () {
 
-    padStart: function () {
+    // },
 
-    },
+    // padStart: function () {
 
-    padEnd: function () {
+    // },
 
-    },
+    // padEnd: function () {
 
-    pad: function () {
+    // },
 
-    },
+    // pad: function () {
 
-    keys: function () {
+    // },
 
-    },
+    // keys: function () {
 
-    random: function () {
+    // },
 
-    },
+    // random: function () {
 
-    round: function (number, precision=0) {
+    // },
 
-    },
+    // round: function (number, precision = 0) {
 
-    ceil: function (number, precision=0) {
+    // },
 
-    },
+    // ceil: function (number, precision = 0) {
 
-    floor: function (number, precision=0) {
+    // },
 
-    },
+    // floor: function (number, precision = 0) {
 
-    cloneDeep: function () {
+    // },
 
-    },
+    // cloneDeep: function () {
 
-    trim: function () {
+    // },
 
-    },
+    // trim: function () {
 
-    trimStart: function () {
+    // },
 
-    },
+    // trimStart: function () {
 
-    trimEnd: function () {
+    // },
 
-    },
+    // trimEnd: function () {
+
+    // },
 
     concat: function (array, values) {
         const result = []
