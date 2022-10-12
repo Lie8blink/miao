@@ -1,0 +1,121 @@
+.regexp101-main {
+
+}
+.regexp101-main #regexpInput{
+}
+.regexp101-main #stringInput{
+  height: 200px;
+  background-color: transparent;
+}
+#result {
+  height: 200px;
+}
+#regexpInput, #stringInput, #result {
+  outline: none;
+  width: 500px;
+  padding: 0.5em;
+  border: 2px solid;
+  box-sizing: border-box;
+  border-radius: .3em;
+  margin: .3em;
+  font-size: 1.5em;
+  font-family: consolas;
+}
+#result strong {
+  font-weight: normal;
+  background-color: #d5ebff;
+}
+#result strong:nth-child(even) {
+  font-weight: normal;
+  background-color: #9fcfff;
+}
+#result strong:empty {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: -1px;
+  margin-right: -1px;
+  background-image: linear-gradient(red, red)
+}
+
+#showoff {
+  position: relative;
+}
+#result {
+  xposition: absolute;
+  xtop: 0;
+  xleft: 0;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  xz-index: -1;
+}
+#result, #stringInput {
+  line-height: 1.5;
+  overflow: auto;
+}
+#regexpOptions {
+  margin: .3em;
+}
+.title {
+  margin: .3em;
+}
+[data-group-index="1"] {
+  background-color: #c4e8ac;
+}
+[data-group-index="2"] {
+  background-color: #f6d7a6;
+}
+[data-group-index="3"] {
+  background-color: #c8c8ff;
+}
+[data-group-index="4"] {
+  background-color: #f9c0bb;
+}
+[data-group-index="5"] {
+  background-color: #c8e7d6;
+}
+[data-group-index="6"] {
+  background-color: #c4e8ac;
+}
+[data-group-index="7"] {
+  background-color: #c4e8ac;
+}
+
+strong:hover, [data-group-index]:hover {
+  box-shadow: 0 0 3px 1px #666, 0 0 3px 1px #666, 0 0 3px 1px #666, 0 0 3px 1px #666;
+  position: relative;
+  z-index: 5;
+}
+
+/* 选中里面有元素被hover的任意元素 */
+/* 重复一遍是为了刻意提升其优先级 */
+*:has(:hover):has(:hover) {
+  box-shadow: none;
+}
+/* :has([data-group-index]:hover) {
+  background-color: initial;
+} */
+/* [data-group-index]:hover * {
+  background-color: inherit !important;
+} */
+
+strong:hover :not(:has(:hover)):hover * {
+  background-color: inherit !important;
+}
+strong:hover:not(:has(:hover)) * {
+  background-color: inherit !important;
+}
+
+span[data-group-index]:not(:has(:hover)):hover::before {
+  content: attr(title);
+  position: absolute;
+  white-space: pre;
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+  top: 100%;
+  left: 50%;
+  transform: translatex(-50%);
+  font-size: 0.75em;
+  padding: 5px 10px;
+  border-radius: 3px;
+}

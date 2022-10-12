@@ -68,8 +68,38 @@ var lie8blink = {
         return result;
     },
 
-    findIndex: function (array, predicate = _.identity, fromIndex = 0) {
-
+    findIndex: function (array, finder, fromIndex = 0) {
+        if (typeof finder == 'string') {
+            for (var i = fromIndex; i < array.length; i++) {
+                if (array[i][finder]) {
+                    return i
+                }
+            }
+            return -1
+        }
+        if (Array.isArray(finder)) {
+            let [key, val] = finder
+            for (var i = fromIndex; i < array.length; i++) {
+                if (array[i][key] == val) {
+                    return i
+                }
+            }
+            return -1
+        }
+        if (typeof finder == 'object') {
+            for (var i = fromIndex; i < array.length; i++) {
+                if (isMatch(array[i], finder)) {
+                    return i
+                }
+            }
+            return false
+        }
+        for (var i = fromIndex; i < array.length; i++) {
+            if (finder(array[i])) {
+                return i
+            }
+        }
+        return -1
     },
 
     findLastIndex: function () { },
@@ -217,36 +247,36 @@ var lie8blink = {
         return right
     },
 
-    // sortedIndexBy: function (array, value, iteratee = _.identity) {
+    sortedIndexBy: function (array, value, iteratee = _.identity) {
 
-    // },
-    // sortedIndexOf: function (array, value) {
+    },
+    sortedIndexOf: function (array, value) {
 
-    // },
-    // sortedLastIndex: function (array, value) {
+    },
+    sortedLastIndex: function (array, value) {
 
-    // },
-    // sortedLastIndexBy: function (array, value, iteratee = _.identity) {
+    },
+    sortedLastIndexBy: function (array, value, iteratee = _.identity) {
 
-    // },
-    // sortedLastIndexOf: function (array, value) {
+    },
+    sortedLastIndexOf: function (array, value) {
 
-    // },
-    // sortedUniq: function (array) {
+    },
+    sortedUniq: function (array) {
 
-    // },
-    // sortedUniqBy: function (array,iteratee) {
+    },
+    sortedUniqBy: function (array, iteratee) {
 
-    // },
+    },
 
 
-    // every: function (collection, predicate = identity) {
+    every: function (collection, predicate = identity) {
 
-    // },
+    },
 
-    // some: function () {
+    some: function () {
 
-    // },
+    },
 
     countBy: function (collection, iteratee) {
         const map = new Map()

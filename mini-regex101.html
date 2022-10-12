@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Regex101</title>
+    <script src="./mini-regex101/mini-regex101.css"></script>
+</head>
+
+<body>
+    <div class="regexp101-main">
+        <h1>Mini Regex 101</h1>
+
+        <div class="title"><strong>REGULAR EXPRESSION</strong></div>
+        <input type="text" id="regexpInput" value="(((\d+)\w)(\w+)).." oninput="run()">
+        <div id="regexpOptions">
+          <strong>OPTIONS: </strong>
+          <label><input type="checkbox" onchange="run()" checked data-flag="g" id="flagGlobal"> g</label>
+          <label><input type="checkbox" onchange="run()" checked data-flag="m" id="flagMultiline"> m</label>
+          <label><input type="checkbox" onchange="run()" data-flag="i" id="flagIgnoreCase"> i</label>
+          <label><input type="checkbox" onchange="run()" data-flag="y" id="flagSticky"> y</label>
+          <label><input type="checkbox" onchange="run()" data-flag="u" id="flagUnicode"> u</label>
+          <label><input type="checkbox" onchange="run()" data-flag="s" id="flagSingleLine"> s</label>
+          <label><input type="checkbox" onchange="run()" data-flag="d" id="flagIndices"> d</label>
+          <span id="info"></span>
+        </div>
+        <div id="showoff">
+          <textarea spellcheck="false" onscroll="同步滚动条()" oninput="run()" name="" id="stringInput">foo 112barr baz 111aaaaa baz 222 4243ddddd 333 cccc</textarea>
+          <pre id="result"></pre>
+        </div>
+        <div class="title"><strong>SUBSTITUTION</strong></div>
+        <input oninput="run()" type="text" id="replacementString">
+        <pre id="substitutionResult"></pre>
+      </div>
+    <script src="./mini-regex101/mini-regex101.js"></script>
+</body>
+
+</html>
